@@ -1,40 +1,54 @@
 <!doctype html>
 <html>
+    <head>
+        <h1> Order a Melongram </h1>
+    </head>
 
-Order a Melongram
+    <body>
+        <p>
+            There's no better way to show a loved one you care than with a Melongram. <br><br>
 
-There's no better way to show a loved one you care than with a Melongram.
+            Each Melongram comes with a custom message printed on high-quality cardstock
+            and your choice of a hand-picked, premium melon.
+        </p>
 
-Each Melongram comes with a custom message printed on high-quality cardstock
-and your choice of a hand-picked, premium melon.
+        <h2>Melon Options</h2>
 
-Melon Options
+        <p>Choose from one of these melons:</p>
+        <table>
+        <tr><td>Watermelon</td><td>$1,200.00</td></tr>
+        <tr><td>Canteloupe</td><td>$400.00</td></tr>
+        <tr><td>Honeydew</td><td>$1,750,00.00</td></tr>
+        </table>
 
-Choose from one of these melons:
+        <h2>Order Form</h2>
 
-Watermelon $1,200.00
-Canteloupe $400.00
-Honeydew $1,750,00.00
+        <form>
+            <p>Your name
+            <input type="text" name="name"></p>
 
-Order Form
+            <p>Who are we sending this to?
+            <input type="text" name="recipient"></p>
 
-Your name
+            <p>Choose a melon
+            <select name="melon">
+            <option value="Watermleon">Watermelon</option>
+            <option value="Canteloupe">Canteloupe</option>
+            <option value="Honeydew">Honeydew</option>
+            </select></p>
 
-Who are we sending this to?
+            <p>When should we deliver?
+            <input type="radio" name="time" value="am">Morning
+            <input type="radio" name="time" value="pm">Evening
+            <input type="radio" name="time" value="any">Any time</p>
 
-Choose a melon
-Watermleon
-Canteloupe
-Honeydew
+            <p>Enter your message:<br>
+            <textarea name="message" rows="5" cols="33"></textarea></p>
 
-When should we deliver?
-Morning
-Evening
-Any time
+            <p>Subscribe to our newsletter
+            <input type="checkbox" name="subscribe" value="Yes">Yes</p>
 
-Enter your message:
-
-Subscribe to our newsletter
-Yes
-
+            <button type="button">Submit query</button>
+            </form>
+    </body>
 </html>
